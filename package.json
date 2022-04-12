@@ -1,0 +1,26 @@
+{
+  "name": "discord-js-bot-template",
+  "version": "1.0.0",
+  "description": "A discord.js bot template with minimal dependencies.",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/main.ts"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "discord.js",
+    "template"
+  ],
+  "author": "DotDivee",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@jsprismarine/brigadier": "^0.2.0-rc.1",
+    "@types/node": "^17.0.18",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.3.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
