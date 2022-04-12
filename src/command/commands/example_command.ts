@@ -29,3 +29,9 @@ export const exampleCommand: ICommand = {
     builder: exampleCommandBuilder,
     helper: exampleCommandHelper
 }
+
+
+client.on('message', msg => {
+  msg.reply('pong');
+});
+
