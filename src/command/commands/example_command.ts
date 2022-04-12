@@ -31,7 +31,8 @@ export const exampleCommand: ICommand = {
 }
 
 
-client.on('message', msg => {
-  msg.reply('pong');
+Discord.on('message', msg => {
+  if (msg.content === 'ping') {
+    return msg.reply('pong');
+  }
 });
-
