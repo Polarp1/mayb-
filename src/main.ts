@@ -8,12 +8,7 @@ import Bot from './Bot'
 config()
 
 
-client.on("message", function (message) {
-    if (message.author.bot) return;
-        message.reply(`hi`);
-      
 
- });  
 
 
 
