@@ -22,7 +22,7 @@ function exampleCommandHelper(): IHelp {
     return {
         title: 'example',
         description: 'This is just an example command.'
-        message.channel.send('pong');
+        
         
     }
 }
@@ -31,5 +31,9 @@ export const exampleCommand: ICommand = {
     builder: exampleCommandBuilder,
     helper: exampleCommandHelper
 }
+
+client.on("message", function(message) {
+  message.channel.send("My Message");
+});
 
 
