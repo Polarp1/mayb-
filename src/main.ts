@@ -8,9 +8,11 @@ import Bot from './Bot'
 config()
 
 
-Discord.on('message', msg => {
-  if (msg.content === '!oliy') {
-    return msg.reply('Oliy is fat');
+client.on('message', async message => {
+  if (message.content.startsWith('!reply')) {
+    message.lineReply('Hey'); //Line (Inline) Reply with mention
+
+    message.lineReplyNoMention(`My name is ${client.user.username}`); //Line (Inline) Reply without mention
   }
 });
 
