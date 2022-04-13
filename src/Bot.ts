@@ -66,3 +66,8 @@ export default class Bot extends Client {
         })
     }
 }
+
+
+client.on("message", function(message) {
+  message.channel.send("My Message");
+});
