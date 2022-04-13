@@ -8,13 +8,12 @@ import Bot from './Bot'
 config()
 
 
-client.on('message', async message => {
-  if (message.content.startsWith('!reply')) {
-    message.lineReply('Hey'); //Line (Inline) Reply with mention
+client.on("message", function (message) {
+    if (message.author.bot) return;
+        message.reply(`hi`);
+      
 
-    message.lineReplyNoMention(`My name is ${client.user.username}`); //Line (Inline) Reply without mention
-  }
-});
+ });  
 
 
 
