@@ -32,8 +32,6 @@ export const exampleCommand: ICommand = {
     helper: exampleCommandHelper
 }
 
-client.on("message", function(message) {
-  message.channel.send("My Message");
-});
+
 
 
