@@ -22,6 +22,7 @@ function exampleCommandHelper(): IHelp {
     return {
         title: 'example',
         description: 'This is just an example command.'
+        message.channel.send('pong');
         
     }
 }
